@@ -1,0 +1,42 @@
+﻿@model Models.TransferMaterials
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+    <style>
+        .form-group{margin-bottom: 10px; width: 210px; padding-left: 5px;
+                                     position: relative; left: 50%; transform: translate(-50%);}
+                                    input{border:1px solid #00C4F2; border-radius: 5px}
+    </style>
+</head>
+<body>
+<form asp-action="TransferMaterial" asp-controller="Menu">
+    <div class="form-group">
+        <label asp-for="TransDate"></label>
+        <input class="form-input" type="date" asp-for="TransDate" required/>
+    </div>
+    <div class="form-group">
+        <label asp-for="DocumentId"></label>
+        <input class="form-input" type="text" asp-for="DocumentId" required/>
+    </div>
+    <div class="form-group">
+        <label asp-for="Price">Price_$</label>
+        <input class="form-input" type="number" asp-for="Price" required/>
+    </div>
+    <div class="form-group">
+        <label asp-for="MaterialId"></label>
+        <input class="form-input" type="number" asp-for="MaterialId" required/>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Сохранить" class="btn btn-outline-secondary" />
+    </div>
+</form>
+</body>
+</html>

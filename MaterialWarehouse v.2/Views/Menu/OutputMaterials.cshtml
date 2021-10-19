@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Models.OutputMaterials>
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+    <style>
+        #grid{display: grid; grid-template-rows: auto; grid-template-columns: 180px 120px 120px 120px; grid-gap: 15px;}
+                #grid > div {
+                    font-size: 18px;
+                    padding: 5px;
+                    text-align: center;
+                }
+    </style>
+</head>
+<body>
+<div id="grid">
+    <tr>
+        <div><th>Дата</th></div>
+        <div><th>№Документа</th></div>
+        <div><th>Цена</th></div>
+        <div><th>...</th></div>
+    </tr>
+    
+    @foreach (var item in Model)
+    {
+        <tr>
+            <div>
+                <td>
+                    @item.TransDate
+                </td>
+            </div>
+            <div>
+                <td>
+                    @item.DocumentId
+                </td>
+            </div>
+            <div>
+                <td>
+                    @item.Price
+                </td>
+            </div>
+            <div>
+                <td>
+                    <a asp-controller="Menu" asp-action="Edit" asp-route-id="@item.Id">Изменить</a>
+                </td>
+            </div>
+        </tr>
+    }
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿@model Models.Materials
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+    <style>
+            .form-group{margin-bottom: 10px; width: 210px; padding-left: 5px;
+             position: relative; left: 50%; transform: translate(-50%);}
+            input{border:1px solid #00C4F2; border-radius: 5px}
+        </style>
+</head>
+<body>
+<form asp-action="Material" asp-controller="Menu">
+    <div>
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input type="text" asp-for="Name" required/>
+        </div>
+        <div class="form-group">
+            <label asp-for="Type"></label>
+            <input type="text" asp-for="Type" required/>
+        </div>
+        <div class="form-group">
+            <label asp-for="Price"></label>
+            <input type="number" asp-for="Price" required/>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Сохранить"/>
+        </div>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialWarehouse v.2", "MaterialWarehouse v.2\MaterialWarehouse v.2.csproj", "{F786FB53-C1FB-4D72-B59A-13A9FE2439B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{B90110F1-54A0-4E1C-8A1B-26FDD31261BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{496A2F9F-B4D8-45DB-B21E-B0911E702454}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F786FB53-C1FB-4D72-B59A-13A9FE2439B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F786FB53-C1FB-4D72-B59A-13A9FE2439B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F786FB53-C1FB-4D72-B59A-13A9FE2439B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F786FB53-C1FB-4D72-B59A-13A9FE2439B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B90110F1-54A0-4E1C-8A1B-26FDD31261BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B90110F1-54A0-4E1C-8A1B-26FDD31261BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B90110F1-54A0-4E1C-8A1B-26FDD31261BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B90110F1-54A0-4E1C-8A1B-26FDD31261BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{496A2F9F-B4D8-45DB-B21E-B0911E702454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{496A2F9F-B4D8-45DB-B21E-B0911E702454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{496A2F9F-B4D8-45DB-B21E-B0911E702454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{496A2F9F-B4D8-45DB-B21E-B0911E702454}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
